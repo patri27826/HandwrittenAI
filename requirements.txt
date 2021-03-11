@@ -5,3 +5,4 @@ itsdangerous==0.24
 Jinja2>=2.10.1
 six==1.11.0
 Werkzeug==0.15
+gunicorn==19.3.0
