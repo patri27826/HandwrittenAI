@@ -60,7 +60,7 @@ export default {
             } else {
                 const path = this.webURl+`/api/getdata`
                 var dataURL = this.signaturePad.toDataURL("image/jpeg");
-                axios.get(path, { params: { data : dataURL, username : this.username, count : this.word_count} })
+                axios.post(path, { params: { data : dataURL, username : this.username, count : this.word_count} })
                     .then(response => {
                         console.log(response.data)
                     })
@@ -89,7 +89,7 @@ export default {
             this.login = param[2]
         },
         showPic(){
-            axios.get(this.webURl+'api/getpic', { params: { username : this.username } })
+            axios.get(this.webURl+'/api/getpic', { params: { username : this.username } })
                 .then(response => {
                     var pics = response.data
                     this.picture = pics.split(',')
