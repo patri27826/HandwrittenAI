@@ -8,7 +8,7 @@ import requests,base64,uuid
 import os
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder = "./templates/static", template_folder = "./templates")
 cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///test.db"
