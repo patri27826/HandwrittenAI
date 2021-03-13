@@ -60,7 +60,7 @@ export default {
             } else {
                 const path = this.webURl+`/api/getdata`
                 var dataURL = this.signaturePad.toDataURL("image/jpeg");
-                axios.post(path, { params: { data : dataURL, username : this.username, count : this.word_count} })
+                axios.post(path, { data : dataURL, username : this.username, count : this.word_count})
                     .then(response => {
                         console.log(response.data)
                     })
