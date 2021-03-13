@@ -49,7 +49,7 @@ export default {
             username : null,
             password : null,
             picture : null,
-            webURl : 'https://patri27826.github.io/handwriter/'
+            webURl : 'http://localhost:5000'
         }
     },
     components:{ Login },
