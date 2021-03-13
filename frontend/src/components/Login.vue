@@ -26,12 +26,13 @@ export default {
             username : '',
             password : '',
             login : false,
-            login_msg : ''
+            login_msg : '',
+            webURl : 'https://flask-vue-handwrite.herokuapp.com'
         }
     },
     methods: {
         loginFunc(){
-            axios.get('http://localhost:5000/api/login', { params: { username : this.username, password : this.password } })
+            axios.get(this.webURl+'/api/login', { params: { username : this.username, password : this.password } })
                 .then(response => {
                     if(response.data == "success"){
                         alert('Login success!')
@@ -47,7 +48,7 @@ export default {
                 })
         },
         registerFunc(){
-            axios.get('http://localhost:5000/api/register', { params: { username : this.username, password : this.password } })
+            axios.get(this.webURl+'/api/register', { params: { username : this.username, password : this.password } })
                 .then(response => {
                     if(response.data == "success"){
                         this.username = ''
