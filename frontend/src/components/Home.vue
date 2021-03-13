@@ -49,7 +49,7 @@ export default {
             username : null,
             password : null,
             picture : null,
-            webURl : 'http://localhost:5000'
+            webURl : 'https://flask-vue-handwrite.herokuapp.com'
         }
     },
     components:{ Login },
