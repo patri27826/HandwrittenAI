@@ -1,8 +1,8 @@
-# DEMO
+# Demo
 https://www.youtube.com/watch?v=934fLu3619k&feature=youtu.be&ab_channel=PatrickLin
 # Present
 <img>https://imgur.com/a/f6kIsSE</img>
-#Usage
+# Usage
 ``` bash
 # install front-end
 cd frontend
